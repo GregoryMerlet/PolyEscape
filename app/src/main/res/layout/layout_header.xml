@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:background="@color/colorPrimary">
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center"
+        android:layout_toStartOf="@+id/timeCountLayout"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="25dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/timeCountLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true">
+        <TextView
+            android:id="@+id/roomCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resolvedRooms"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="25dp"/>
+        <ImageView
+            android:id="@+id/roomCount"
+            android:layout_width="400dp"
+            android:layout_height="30dp"
+            android:background="@drawable/suivi_none"
+            android:layout_below="@id/roomCountText"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/roomProgress" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timeCountLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp">
+        <ProgressBar
+            android:id="@+id/timeCount_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:rotation="-90"
+            android:indeterminate="false"
+            android:layout_centerInParent="true"
+            android:max="30"
+            android:progress="25"
+            android:scaleY="-1"
+            android:progressDrawable="@drawable/circular_progressbar" />
+        <TextView
+            android:id="@+id/timeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="45dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

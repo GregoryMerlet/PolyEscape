@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">PolyEscape</string>
+    <string name="teamText">Équipe</string>
+    <string name="youWin">Bravo !\nVous avez gagné !</string>
+    <string name="youLose">Dommage !\nVous avez perdu !</string>
+    <string name="buttonBack">Retour au menu</string>
+    <string name="ip">Adresse IP du serveur</string>
+    <string name="port">Port du serveur</string>
+    <string name="buttonConnexion">Se connecter</string>
+    <string name="teamName">Nom d\'équipe</string>
+    <string name="buttonValidate">Valider</string>
+    <string name="ok">OK</string>
+    <string name="connexionFail">Les identifiants sont incorrects.</string>
+    <string name="enigmaSolved">Votre réponse est correcte, vous avez réussi l\'énigme !</string>
+    <string name="roomSolved">Votre réponse est correcte. Félicitations, vous avez terminé cette salle !</string>
+    <string name="plan">plan</string>
+    <string name="mapTop">Dirigez-vous dans une salle pour lancer une épreuve.</string>
+    <string name="close">close</string>
+    <string name="qrdata">QR data</string>
+    <string name="qrWrongTag">Le QR Code n\'a pas été reconnu.</string>
+    <string name="resolvedRooms">Salles résolues</string>
+    <string name="hints">Indices</string>
+    <string name="askHint">Demander un indice</string>
+    <string name="help1">Je ne comprends pas ce qu\'il faut faire.</string>
+    <string name="help2">Je ne trouve pas l\'objet dans la pièce.</string>
+    <string name="help3">Je n\'ai pas les connaissances requises pour l\'énigme.</string>
+    <string name="help4">J\'ai dû me tromper quelque part.</string>
+    <string name="logo">Logo</string>
+    <string name="answer">Réponse</string>
+    <string name="sendAnswer">Envoyer réponse</string>
+    <string name="bulb">Ampoule</string>
+    <string name="hint">Indice</string>
+    <string name="loading">GIF Loading</string>
+    <string name="roomProgress">Progression dans les salles</string>
+    <string name="bigPicture">Big picture</string>
+</resources>

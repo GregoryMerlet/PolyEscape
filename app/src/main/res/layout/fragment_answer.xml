@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primaryLightColor">
+
+    <RelativeLayout
+        android:id="@+id/answerMainPart"
+        android:layout_width="890dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/roomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/answerError"
+            android:layout_below="@id/roomName"
+            android:layout_margin="20dp"
+            android:scrollbars="vertical">
+            <TextView
+                android:id="@+id/enigmaDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/primaryTextColor"
+                android:textSize="23dp" />
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/answerError"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/answerFormLayout"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/answerFormLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp">
+            <EditText
+                android:id="@+id/answerEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="15"
+                android:hint="@string/answer"
+                android:textSize="20dp"
+                android:textColorHint="@color/primaryTextColor"
+                android:textColor="@color/primaryTextColor" />
+            <Button
+                android:id="@+id/answerButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sendAnswer"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/qrButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_qr_code_scan" />
+    </RelativeLayout>
+
+    <include layout="@layout/fragment_hints" />
+</LinearLayout>
